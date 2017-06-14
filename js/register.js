@@ -1,0 +1,29 @@
+$(function(){
+	$('.submit').click(function(){
+		console.log(1);
+		$.ajax({
+			url:'registerbefore.php',
+			dataType:'json',
+			data:{
+				username:$('.username').val(),
+				password:$('.password').val()
+			},
+			success:function(data){
+				console.log(data);
+				for(var i=0;i<data.length;i++){
+					if(data[i].username==$('.username').val()&&data[i].password==$('.password').val()){
+						alert('登录成功');
+						return;
+					}
+				}
+				alert('用户名或密码错误');
+			},
+			//请求失败的回调函数
+			error:function(xhr,textStutas){
+				//发起请求的xhr对象
+				console.log(xhr);
+				console.log(textStutas);
+			}
+		})
+	})
+})

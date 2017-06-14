@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, c{ border:none; }
+
+
+
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+
+ul, ol,li{ list-style:none; }
+
+html,body { color:#666; font:12px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ }
+
+a { color:#666; text-decoration:none;    cursor: auto; }
+
+a:visited { color:#666; }
+
+a:hover, a:active, a:focus { color:#ff8400; text-decoration:none; }
+
+@media screen and (max-width:320px ) { html,body{font-size: 12px;} }
+@media screen and (min-width:321px) and (max-width:749px ) { html,body{font-size: 14px;} }
+@media screen and (min-width:750px ) { html,body{}}
+
